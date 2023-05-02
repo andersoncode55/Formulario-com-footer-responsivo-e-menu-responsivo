@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário-Completo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Formulário</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Ficha de Dados Pessoais</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Formação</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Documentação</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Dados Bancários</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Endereço Residencial</a></li>
+                    
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <br><br>
+
+    <script src="assets/js/script.js"></script>
+
+
+    <main>
+        <form>
+
+
+       <div class="dados">
+        <fieldset>
+            <br>
+
+            <legend><strong>Identificação (Dados completos, sem abreviações).</strong></legend>
+
+            <div>
+            <input type="text" name="name" id="name" required placeholder="Nome completo"><br> <br>
+            <input type="text" name="pai" id="pai" required placeholder="Insira o nome do seu pai">
+            <input type="text" name="mãe" id="mãe" required placeholder="Insira o da sua Mãe"><br>
+            <br>
+            <input type="email" name="email" id="email" required placeholder="Insira seu E-mail">
+        </div>  
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><strong>Sexo:</strong></legend>
+        <div class="sexo"><br>
+          
+            <input type="radio" name="sexo" value="masculino" required> Masculino
+            <input type="radio" name="sexo" value="feminino" required> Feminino
+            <input type="radio" name="sexo" value="Intersexo" required> Intersexo
+            <input type="radio" name="sexo" value="Diádico" required> Diádico 
+            <input type="radio" name="sexo" value="Altersexo" required> Altersexo
+        </div>
+    </fieldset><br>
+
+     <fieldset>
+        <legend><strong>Cor/Etnia:</strong></legend>
+    <div class="Cor/Etnia"><br>
+        <input type="radio" name="cor" value="branca" required> Branca
+        <input type="radio" name="cor" value="preto" required> Preto
+        <input type="radio" name="cor" value="amarelo" required> Amarelo
+        <input type="radio" name="cor" value="parda" required> Parda
+        <input type="radio" name="cor" value="branca" required> Indigena
+
+    </div>
+   </fieldset><br>
+
+
+   <fieldset>
+    <div class="gênero">
+        <legend><strong>Gênero:</strong></legend><br>
+        <input type="radio" name="gênero" value="branca" required> Masculino
+        <input type="radio" name="gênero" value="preto" required> Feminino
+        <input type="radio" name="gênero" value="amarelo" required> Gênero neutro
+        <input type="radio" name="gênero" value="parda" required> Transgênero 
+        <input type="radio" name="gênero" value="branca" required> Não-binário
+        <input type="radio" name="gênero" value="Pangênero" required> Pangênero 
+        <input type="radio" name="gênero" value="Genderqueer,two-spirit" required> Genderqueer,two-spirit 
+        <input type="radio" name="gênero" value="Terceiro gênero e todos" required> Terceiro gênero e todos
+        <input type="radio" name="gênero" value="Nenhum ou uma combinação" required> Nenhum ou uma combinação  
+    </div>
+   </fieldset>
+
+
+   <div class="date"><br>
+    <fieldset><br>
+        <legend><strong>Informe a data do seu aniversário:</strong></legend>
+        <input type="date" id="data" required>
+    </fieldset>
+   </div><br>
+
+
+   <div class="pais">
+    <fieldset>
+        <legend><strong>Nacionalidade:</strong></legend><br>
+        <select id="senioridade" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Afeganistão</option>
+            <option>África do Sul</option>
+            <option>Albânia</option>
+            <option>Alemanha</option>
+            <option>Andorra</option>
+            <option>Angola</option>
+            <option>Antiga e Barbuda</option>
+            <option>Arábia Saudita</option>
+            <option>Argélia</option>
+            <option>Argentina</option>
+            <option>Arménia</option>
+            <option>Austrália</option>
+            <option>Áustraia</option>
+            <option>Azerbaijão</option>
+            <option>Bahamas</option>
+            <option>Bangladexe</option>
+            <option>Barbados</option>
+            <option>Barém</option>
+            <option>Bélgica</option>
+            <option>Benim</option>
+            <option>Bielorrússia</option>
+            <option>Bolívia</option>
+            <option>Bósnia e Herzegovina</option>
+            <option>Botsuana</option>
+            <option>Brasil</option>
+            <option>Brunei</option>
+            <option>Bulgária</option>
+            <option>Burquina Faso</option>
+            <option>Burúndi</option>
+            <option>Butão</option>
+            <option>Cabo Verde</option>
+            <option>Camarões</option>
+            <option>Camboja</option>
+            <option>Canadá</option>
+            <option>Catar</option>
+            <option>Cazaquistão</option>
+            <option>Chade</option>
+            <option>Chile</option>
+            <option>China</option>
+            <option>Chipre</option>
+            <option>Colômbia</option>
+            <option>Comores</option>
+            <option>Congo-Brazzaville</option>
+            <option>Coreia do Norte</option>
+            <option>Coreia do Sul</option>
+            <option>Cosovo</option>
+            <option>Costa do Marfim</option>
+            <option>Costa Rica</option>
+            <option>Croácia</option>
+            <option>Cuaite</option>
+            <option>Cuba</option>
+            <option>Dinamarca</option>
+            <option>Dominica</option>
+            <option>Egito</option>
+            <option>Emirados Árabes Unidos</option>
+            <option>Equador</option>
+            <option>Eritreia</option>
+            <option>Eslováquia</option>
+            <option>Eslovénia</option>
+            <option>Espanha</option>
+            <option>Essuatíni</option>
+            <option>Estado da Palestina</option>
+            <option>Estados Unidos</option>
+            <option>Estónia</option>
+            <option>Etiópia</option>
+            <option>Fiji</option>
+            <option>Filipinas</option>
+            <option>Finlândia</option>
+            <option>França</option>
+            <option>Gabão</option>
+            <option>Gâmbia</option>
+            <option>Gana</option>
+            <option>Geórgia</option>
+            <option>Granada</option>
+            <option>Grécia</option>
+            <option>Guatemala</option>
+            <option>Guiana</option>
+            <option>Guiné</option>
+            <option>Guiné Equatorial</option>
+            <option>Guiné-Bissau</option>
+            <option>Haiti</option>
+            <option>Honduras</option>
+            <option>Hungria</option>
+            <option>Iémen</option>
+            <option>Ilhas Marechal</option>
+            <option>Índia</option>
+            <option>Indonésia</option>
+            <option>Irão</option>
+            <option>Iraque</option>
+            <option>Irlanda</option>
+            <option>Islândia</option>
+            <option>Israel</option>
+            <option>Itália</option>
+            <option>Jamaica</option>
+            <option>Japão</option>
+            <option>Jibuti</option>
+            <option>Jordânia</option>
+            <option>Laus</option>
+            <option>Lesoto</option>
+            <option>Letónia</option>
+            <option>Líbano</option>
+            <option>Libéria</option>
+            <option>Líbia</option>
+            <option>Listenstaine</option>
+            <option>Lituânia</option>
+            <option>Luxemburgo</option>
+            <option>Macedónia do Norte</option>
+            <option>Madagáscar</option>
+            <option>Malásia</option>
+            <option>Maláui</option>
+            <option>Maldivas</option>
+            <option>Mali</option>
+            <option>Malta</option>
+            <option>Marrocos</option>
+            <option>Maurícia</option>
+            <option>Mauritânia</option>
+            <option>México</option>
+            <option>Mianmar</option>
+            <option>Micronésia</option>
+            <option>Moçambique</option>
+            <option>Moldávia</option>
+            <option>Mónaco</option>
+            <option>Mongólia</option>
+            <option>Montenegro</option>
+            <option>Namíbia</option>
+            <option>Nauru</option>
+            <option>Nepal</option>
+            <option>Nicarágua</option>
+            <option>Níger</option>
+            <option>Nigéria</option>
+            <option>Noruega</option>
+            <option>Nova Zelândia</option>
+            <option>Omã</option>
+            <option>Países Baixos</option>
+            <option>Palau</option>
+            <option>Panamá</option>
+            <option>Papua Nova Guiné</option>
+            <option>Paquistão</option>
+            <option>Paraguai</option>
+            <option>Peru</option>
+            <option>Polónia</option>
+            <option>Portugal</option>
+            <option>Quénia</option>
+            <option>Quirguistão</option>
+            <option>Quiribáti</option>
+            <option>Reino Unido</option>
+            <option>República Centro-Africana</option>
+            <option>República Checa</option>
+            <option>República Democrática do Congo	</option>
+            <option>República Dominicana</option>
+            <option>Roménia</option>
+            <option>Ruanda</option>
+            <option>Rússia</option>
+            <option>Salomão</option>
+            <option>Salvador</option>
+            <option>Samoa</option>
+            <option>Santa Lúcia</option>
+            <option>São Cristóvão e Neves</option>
+            <option>São Marinho</option>
+            <option>São Tomé e Príncipe</option>
+            <option>São Vicente e Granadinas</option>
+            <option>Seicheles</option>
+            <option>Senegal</option>
+            <option>Serra Leoa</option>
+            <option>Sérvia</option>
+            <option>Singapura</option>
+            <option>Síria</option>
+            <option>Somália</option>
+            <option>Sri Lanca</option>
+            <option>Sudão</option>
+            <option>Sudão do Sul</option>
+            <option>Suécia</option>
+            <option>Suíça</option>
+            <option>Suriname</option>
+            <option>Tailândia</option>
+            <option>Taiuã</option>
+            <option>Tajiquistão</option>
+            <option>Tanzânia</option>
+            <option>Timor-Leste</option>
+            <option>Togo</option>
+            <option>Tonga</option>
+            <option>Trindade e Tobago</option>
+            <option>Tunísia</option>
+            <option>Turcomenistão</option>
+            <option>Turquia</option>
+            <option>Tuvalu</option>
+            <option>Ucrânia</option>
+            <option>Uganda</option>
+            <option>Uruguai</option>
+            <option>Usbequistão</option>
+            <option>Vanuatu</option>
+            <option>Vaticano</option>
+            <option>Venezuela</option>
+            <option>Vietname</option>
+            <option>Zâmbia</option>
+            <option>Zimbábue</option>
+        </select>
+    </fieldset>
+   </div>
+
+
+   <div class="estado civil"><br>
+      <legend><strong>Estado Civil:</strong></legend>
+     <fieldset>
+        <select name="" id="senioridadse">
+            <option selected disabled value="">Selecione</option>
+            <option>Solteiro</option>
+            <option>Casado</option>
+            <option>Separado</option>
+            <option>Divorciado</option>
+            <option>Viúvo</option>
+          </select>
+
+     </fieldset>
+   </div><br>
+
+
+
+        <div class="defi">
+            <fieldset>
+                <legend><strong>Deficiência </strong></legend>
+                <input type="radio" name="sex" value="male"> Sim
+                <input type="radio" name="sex" value="female"> Não
+                <input type="text" placeholder="Sim/Qual:">
+            </fieldset>
+        </div>
+
+
+        <div class="grupo"><br>
+            <fieldset>
+                <legend><strong>Grupo Sanguíneo:</strong></legend>
+                <input type="text" placeholder="Tipo" required>
+            </fieldset>
+        </div><br>
+
+
+        <div id="titulo2">
+            <h2>Formação:</h2>
+           </div><br>
+
+
+           <fieldset>
+            <legend><strong>Nivel de escolaridade:</strong></legend>
+            <div class="ensino medio">
+                <input type="radio" name="ensino medio" required>
+                Ensino Médio:
+                <select  id="Ensino Médio" required>
+                    <option selected disabled value="">Selecione</option>
+                  <option>Completo</option>
+                  <option>Incompleto</option>
+                  <option>Completando</option>
+                </select>
+            </div>
+
+
+            <div class="superior">
+                <input type="radio" name="ensino superior">
+                Ensino Superior/Curso:
+                <select id="Ensino Superior" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Administração</option>
+                    <option>Administração Pública</option>
+                    <option>Agroecologia</option>
+                    <option>Agronegócio</option>
+                    <option>Agronomia</option>
+                    <option>Análise de Sistemas</option>
+                    <option>Antropologia</option>
+                    <option>Arquitetura e Urbanismo</option>
+                    <option>Arquivologia</option>
+                    <option>Artes</option>
+                    <option>Artes Cênicas</option>
+                    <option>Astronomia</option>
+                    <option>Biblioteconomia</option>
+                    <option>Biologia</option>
+                    <option>Biomedicina</option>
+                    <option>Bioquímica</option>
+                    <option>Canto</option>
+                    <option>Cenografia</option>
+                    <option>Ciência da Computação</option>
+                    <option>Ciências Biológicas</option>
+                    <option>Ciências Contábeis</option>
+                    <option>Ciências Econômicas</option>
+                    <option>Ciências Sociais</option>
+                    <option>Cinema e Audiovisual</option>
+                    <option>Composição e Regência</option>
+                    <option>Computação</option>
+                    <option>Comunicação e Marketing</option>
+                    <option>Comunicação Social</option>
+                    <option>Desenho Industrial</option>
+                    <option>Design</option>
+                    <option>Design de Ambientes</option>
+                    <option>Design de Games</option>
+                    <option>Design de Interiores</option>
+                    <option>Design de Moda</option>
+                    <option>Design de Produto</option>
+                    <option>Design Digital</option>
+                    <option>Design Gráfico</option>
+                    <option>Direção</option>
+                    <option>Direito</option>
+                    <option>Educação Física</option>
+                    <option>Enfermagem</option>
+                    <option>Engenharia Acústica</option>
+                    <option>Engenharia Aeroespacial</option>
+                    <option>Engenharia Aeronáutica</option>
+                    <option>Engenharia Agrícola</option>
+                    <option>Engenharia Agroindustrial</option>
+                    <option>Engenharia Agronômica</option>
+                    <option>Engenharia Ambiental</option>
+                    <option>Engenharia Automotiva</option>
+                    <option>Engenharia Bioenergética</option>
+                    <option>Engenharia Biomédica</option>
+                    <option>Engenharia Bioquímica</option>
+                    <option>Engenharia Biotecnológica</option>
+                    <option>Engenharia Cartográfica</option>
+                    <option>Engenharia Civil</option>
+                    <option>Engenharia da Computação</option>
+                    <option>Engenharia da Mobilidade</option>
+                    <option>Engenharia de Agrimensura</option>
+                    <option>Engenharia de Agronegócios</option>
+                    <option>Engenharia de Alimentos</option>
+                    <option>Engenharia de Aquicultura</option>
+                    <option>Engenharia de Automação</option>
+                    <option>Engenharia de Bioprocessos</option>
+                    <option>Engenharia de Biossistemas</option>
+                    <option>Engenharia de Biotecnologia</option>
+                    <option>Engenharia de Energia</option>
+                    <option>Engenharia de Gestão</option>
+                    <option>Engenharia de Informação</option>
+                    <option>Engenharia de Instrumentação, Automação e Robótica</option>
+                    <option>Engenharia de Manufatura</option>
+                    <option>Engenharia de Materiais</option>
+                    <option>Engenharia de Minas</option>
+                    <option>Engenharia de Pesca</option>
+                    <option>Engenharia de Petróleo</option>
+                    <option>Engenharia de Produção</option>
+                    <option>Engenharia de Recursos Hídricos</option>
+                    <option>Engenharia de Saúde e Segurança</option>
+                    <option>Engenharia de Sistemas</option>
+                    <option>Engenharia de Software</option>
+                    <option>Engenharia de Telecomunicações</option>
+                    <option>Engenharia de Transporte e Logística</option>
+                    <option>Engenharia Elétrica</option>
+                    <option>Engenharia Eletrônica</option>
+                    <option>Engenharia em Sistemas Digitais</option>
+                    <option>Engenharia Ferroviária e Metroviária</option>
+                    <option>Engenharia Física</option>
+                    <option>Engenharia Florestal</option>
+                    <option>Engenharia Geológica</option>
+                    <option>Engenharia Hídrica</option>
+                    <option>Engenharia Industrial</option>
+                    <option>Engenharia Mecânica</option>
+                    <option>Engenharia Mecatrônica</option>
+                    <option>Engenharia Metalúrgica</option>
+                    <option>Engenharia Naval</option>
+                    <option>Engenharia Química</option>
+                    <option>Engenharia Têxtil</option>
+                    <option>Estatística</option>
+                    <option>Farmácia</option>
+                    <option>Filosofia</option>
+                    <option>Física</option>
+                    <option>Fisioterapia</option>
+                    <option>Fonoaudiologia</option>
+                    <option>Geografia</option>
+                    <option>Gestão Ambiental</option>
+                    <option>Gestão da Informação</option>
+                    <option>Gestão de Políticas Públicas</option>
+                    <option>Gestão de Serviços de Saúde</option>
+                    <option>Gestão do Agronegócio</option>
+                    <option>Gestão Pública</option>
+                    <option>História</option>
+                    <option>Hotelaria</option>
+                    <option>Jornalismo</option>
+                    <option>Letras</option>
+                    <option>Marketing</option>
+                    <option>Matemática</option>
+                    <option>Mecânica Industrial</option>
+                    <option>Medicina</option>
+                    <option>Medicina Veterinária</option>
+                    <option>Moda</option>
+                    <option>Música</option>
+                    <option>Nutrição</option>
+                    <option>Odontologia</option>
+                    <option>Pedagogia</option>
+                    <option>Políticas Públicas</option>
+                    <option>Propaganda e Marketing</option>
+                    <option>Psicologia</option>
+                    <option>Publicidade e Propaganda</option>
+                    <option>Química</option>
+                    <option>Rádio, TV e Internet</option>
+                    <option>Relações Internacionais</option>
+                    <option>Relações Públicas</option>
+                    <option>Secretariado Executivo</option>
+                    <option>Serviço Social</option>
+                    <option>Sistemas de Informação</option>
+                    <option>Tecnologias Digitais</option>
+                    <option>Teologia</option>
+                    <option>Terapia Ocupacional</option>
+                    <option>Tradutor e Intérprete</option>
+                    <option>Turismo</option>
+                    <option>Zootecnia</option>
+                    <option>Artes</option>
+                    <option>Artes Cênicas</option>
+                    <option>Artes Plásticas</option>
+                    <option>Artes Visuais</option>
+                    <option>Biologia</option>
+                    <option>Ciência da Computação</option>
+                    <option>Ciências Agrícolas</option>
+                    <option>Ciências da Natureza</option>
+                    <option>Ciências Exatas</option>
+                    <option>Ciências Sociais</option>
+                    <option>Computação</option>
+                    <option>Desenho e Plástica</option>
+                    <option>Educação do Campo</option>
+                    <option>Educação Especial</option>
+                    <option>Enfermagem</option>
+                    <option>Filosofia</option>
+                    <option>Física</option>
+                    <option>Geografia</option>
+                    <option>História</option>
+                    <option>Informática</option>
+                    <option>Letras</option>
+                    <option>Matemática</option>
+                    <option>Música</option>
+                    <option>Pedagogia</option>
+                    <option>Programa Especial de Formação Pedagógica</option>
+                    <option>Psicologia</option>
+                    <option>Química</option>
+                    <option>Segunda licenciatura</option>
+                    <option>Teatro</option>   
+                </select>
+            </div>
+
+
+            <div class="especializacação">
+                <input type="radio" name="ensino superior ">
+                Especialização/ Curso:
+                <select name="" id="especializacação" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Mestrado</option>
+                    <option>Doutorado</option>
+                    <option>Especialização</option>
+                    <option>Aperfeiçoamento</option>
+                    <option>MBA</option>
+                    <input type="text" placeholder="Mestrado/Área:">
+                    <input type="text" placeholder="Doutorado/Área:">
+
+                </select>
+            </div>
+
+
+        
+
+       
+
+      
+                
+          
+
+
+
+        </fieldset>
+    </div><br>
+
+    <div id="documentação"><br>
+        <h2>Documentação</h2><br>
+
+      
+
+        <fieldset>
+            <legend><strong>Documentos Pessoais:</strong></legend>
+            <input type="text" placeholder="CPF:000.000.000-00"> 
+            <input type="text" placeholder="RG:00.000.000-0">
+            <input type="text" placeholder="Órgão emissor">
+            <input type="text" placeholder="UF:">
+            Data Emissão:<input type="date" required>
+            
+            
+
+
+            <div id="PIS">
+                <input type="text" placeholder="PIS/PASEP:"> <input type="text" placeholder="Seção">
+                <input type="text" placeholder="Título Eletoral:">  <input type="text" placeholder="UF:">
+                <input type="text" placeholder="Zona:">
+                <input type="text" placeholder="Cidade">
+                Data Emissão <input type="date" required>
+                
+            </div>
+
+
+
+
+        </fieldset>
+        
+            
+    </div>
+
+    <div id="Dados"><br>
+        <h2>DADOS BANCÁRIOS:</h2><br>
+        <fieldset>
+            <legend><strong>BANCO:</strong></legend>
+            <select name="" id="">
+                <option selected disabled value="">Selecione</option>
+                <option>Santander</option>
+                <option>Itaú</option>
+                <option>Banco do Brasil</option>
+                <option>Caixa Econômica Federal</option>
+            </select>
+            <input type="text" placeholder="Agência/DV:">
+            <input type="text" placeholder="Conta Corrente Nº/DV:">
+            <input type="text" placeholder="Nome Agência">
+        </fieldset>
+    </div>
+
+
+    <div id="Endereço"><br>
+        <h2>ENDEREÇO RESIDENCIAL:</h2><br>
+        <fieldset>
+            <legend><strong>ENDEREÇO:</strong></legend>
+            <input type="text" placeholder="Logradouro">
+            <input type="text" placeholder="Nº">
+            <input type="text" placeholder="Cidade:">
+            <input type="text" placeholder="Bairro:">
+            <input type="text" placeholder="CEP:00000-000">
+            <input type="text" placeholder="ESTADO:">
+        </fieldset>
+
+
+
+    </div>
+
+
+
+
+</form>
+    </main>
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Logo</h1>
+                <p>It's all about your dreams.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Se inscrever</h3>
+                
+
+                <p>
+                    Digite seu e-mail para ser avisado sobre
+                    nossas soluções de notícias
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+</body>
+</html>
